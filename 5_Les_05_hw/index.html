@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="./js/main.js"></script>
+
+    <title>Интернет-магазин</title>
+</head>
+<body>
+    <div id="app" class="wrapper">
+        <div class="top">
+            <header class="header center">
+                <div class="search">
+                    <input v-on:input="filterProducts" type="text">
+                    <span>&#128270;</span>
+                </div>
+                <div class="cart_box">
+                    <button @click="showCart=!showCart" class="cart_btn" type="button">Корзина</button>
+                    <div class="cart" :class="{cart_hidden: !showCart}">
+                        <cart__top></cart__top>
+                        <div class="cart__items">
+                            <div v-if="cart.length == 0" class="cart__item cart__item_plug">
+                                <span>Список товаров пуст. Добавьте товар в корзину.</span>
+                            </div>
+                            <div v-else class="cart__item" v-for="product of cart" :key="product.id" :data-id="product.id">
+                                <span style="min-width: 10%;">{{ product.id }}</span>
+                                <span><a href="#"><img :src="product.img" alt="some img" style="width: 30px;"></a></span>
+                                <span>{{ product.title }}</span>
+                                <span>{{ product.price }} &#8381;</span>
+                                <div class="cart__item_quantity">
+                                    <span @click="decreaseQuantity">&minus;</span>
+                                    <p>{{ product.quantity }}</p>
+                                    <span @click="increaseQuantity">&plus;</span>
+                                </div>
+                                <span>{{ product.amount }} &#8381;</span>
+                                <span @click="deleteFromCart" class="cart__item_x" style="min-width: 5%;">&times;</span>
+                            </div>
+                        </div>
+                        <cart__bottom v-bind:total="cartTotal"></cart__bottom>
+                    </div>
+                </div>
+            </header>
+            <main class="content center">
+                <div class="products">
+                    <div class="product__item" v-for="product of filter" :key="product.id" :data-id="product.id">
+                        <h3>{{ product.title }}</h3>
+                        <img :src="product.img" alt="some img">
+                        <p>{{ product.price }} &#8381;</p>
+                        <input type="number" name="quantity" value="1" min="1" step="1">
+                        <button @click="addtoCart" class="buy__btn">Добавить в корзину</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div class="footer center"></div>
+    </div>
+</body>
+</html>
