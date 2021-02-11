@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/form_validate.js"></script>
+
+    <title>Интернет-магазин</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <header class="header center">
+                <div class="cart_box">
+                    <button class="cart_btn" type="button">Корзина</button>
+                </div>
+            </header>
+            <main class="content center">
+
+                <form id="user_data" action="#">
+                    <div class="user_data_box">
+                        <label for="fullname">ФИО:</label>
+                        <span>
+                            <input id="fullname" class="" type="text" name="fullname" onkeyup="validForm(this)" placeholder="Фамилия Имя Отчество">
+                            <span class="clrbtn" style="visibility: hidden;">&times;</span>
+                        </span>
+                    </div>
+
+                    <div class="user_data_box">
+                        <label for="phone">Телефон:</label>
+                        <span>
+                            <input id="phone" class="" type="text" name="phone" onkeyup="validForm(this)" placeholder="+7(000)000-0000">
+                            <span class="clrbtn" style="visibility: hidden;">&times;</span>
+                        </span>
+                    </div>
+
+                    <div class="user_data_box">
+                        <label for="email">Электронная почта:</label>
+                        <span>
+                            <input id="email" class="" type="text" name="email" onkeyup="validForm(this)" placeholder="example@mail.ru">
+                            <span class="clrbtn" style="visibility: hidden;">&times;</span>
+                        </span>
+                    </div>
+
+                    <div class="user_data_box">
+                        <label for="comment">Комментарий:</label>
+                        <span>
+                            <textarea id="comment" class="" form="user_data" name="comment" onkeyup="validForm(this)" placeholder="Текст"></textarea>
+                            <span class="clrbtn" style="visibility: hidden;">&times;</span>
+                        </span>
+                    </div>
+
+                    <input id="send_btn" type="button" value="Отправить">
+                </form>
+
+            </main>
+        </div>
+        <div class="footer center"></div>
+    </div>
+</body>
+</html>
