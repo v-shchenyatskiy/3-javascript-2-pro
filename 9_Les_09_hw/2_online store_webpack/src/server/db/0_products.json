@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "title": "Crescent Bay",
+        "price": 15,
+        "img": "img/0_cart_items/1_item.png"
+    },
+    {
+        "id": 2,
+        "title": "Mango Top Red",
+        "price": 20,
+        "img": "img/0_cart_items/2_item.png"
+    },
+    {
+        "id": 3,
+        "title": "Jacket Blue",
+        "price": 25,
+        "img": "img/0_cart_items/3_item.png"
+    },
+    {
+        "id": 4,
+        "title": "Dress With Flowers",
+        "price": 30,
+        "img": "img/0_cart_items/4_item.png"
+    },
+    {
+        "id": 5,
+        "title": "Dress With Lines",
+        "price": 35,
+        "img": "img/0_cart_items/5_item.png"
+    },
+    {
+        "id": 6,
+        "title": "Mango Blazer",
+        "price": 40,
+        "img": "img/0_cart_items/6_item.png"
+    },
+    {
+        "id": 7,
+        "title": "Trousers",
+        "price": 45,
+        "img": "img/0_cart_items/7_item.png"
+    },
+    {
+        "id": 8,
+        "title": "Hoodie Man",
+        "price": 50,
+        "img": "img/0_cart_items/8_item.png"
+    }
+]
