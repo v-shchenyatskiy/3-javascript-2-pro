@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "title": "Hoodie Man",
+        "price": 15,
+        "img": "img/8_p2_main/1_p2_product.png"
+    },
+    {
+        "id": 2,
+        "title": "Mango Top",
+        "price": 20,
+        "img": "img/8_p2_main/2_p2_product.png"
+    },
+    {
+        "id": 3,
+        "title": "Jacket Blue",
+        "price": 25,
+        "img": "img/8_p2_main/3_p2_product.png"
+    },
+    {
+        "id": 4,
+        "title": "Trousers Man",
+        "price": 30,
+        "img": "img/8_p2_main/4_p2_product.png"
+    },
+    {
+        "id": 5,
+        "title": "Shorts Man",
+        "price": 35,
+        "img": "img/8_p2_main/5_p2_product.png"
+    },
+    {
+        "id": 6,
+        "title": "Mango Jacket",
+        "price": 40,
+        "img": "img/8_p2_main/6_p2_product.png"
+    },
+    {
+        "id": 7,
+        "title": "Mango Blazer",
+        "price": 45,
+        "img": "img/8_p2_main/7_p2_product.png"
+    },
+    {
+        "id": 8,
+        "title": "Jacket Man",
+        "price": 50,
+        "img": "img/8_p2_main/8_p2_product.png"
+    },
+    {
+        "id": 9,
+        "title": "T-shirt Man",
+        "price": 50,
+        "img": "img/8_p2_main/9_p2_product.png"
+    }
+]
